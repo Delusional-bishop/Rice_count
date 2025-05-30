@@ -7,3 +7,5 @@ python-dotenv==1.0.1
 opencv-python-headless
 opencv-python
 ultralytics
+lap==0.5.12
+
