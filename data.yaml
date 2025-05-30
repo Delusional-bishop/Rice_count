@@ -1,0 +1,8 @@
+path: /content/data
+train: train/images
+val: validation/images
+nc: 3
+names:
+- broken rice
+- fortified rice
+- normal rice
