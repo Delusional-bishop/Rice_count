@@ -10,7 +10,14 @@ import json
 app = FastAPI()
 
 # Initialize Firebase
-cred = credentials.Certificate("firebase_config.json")
+import os
+import json
+from firebase_admin import credentials
+
+firebase_creds_str = os.environ["Firebase_creds"]
+firebase_creds_dict = json.loads(firebase_creds_str)
+cred = credentials.Certificate(firebase_creds_dict)
+
 initialize_app(cred)
 db = firestore.client()
 
